@@ -2,7 +2,7 @@
 
 This project was generated using **Angular CLI version 15.0.1**.
 
-**OrchotProject** is an Azure File Uploader — a software solution developed for a national chain organization. It enables seamless file uploads to Azure cloud storage. The client side is implemented using Angular, and the server side is built with Web API, following a layered architectural approach.
+This Project is an Azure File Uploader — a software solution developed for a national chain organization. It enables seamless file uploads to Azure cloud storage. The client side is implemented using Angular, and the server side is built with Web API, following a layered architectural approach.
 
 ---
 
