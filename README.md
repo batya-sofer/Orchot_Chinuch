@@ -33,8 +33,8 @@ This project was generated using **Angular CLI version 15.0.1**.
 
 Run the following command to start a development server:
 
-
-ng serve
+```bash
+ng serve```
 Navigate to http://localhost:4200/.
 
 The application will automatically reload when you change any source file.
