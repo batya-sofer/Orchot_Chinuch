@@ -33,7 +33,7 @@ This project was generated using **Angular CLI version 15.0.1**.
 
 Run the following command to start a development server:
 
-```bash
+
 ng serve
 Navigate to http://localhost:4200/.
 
