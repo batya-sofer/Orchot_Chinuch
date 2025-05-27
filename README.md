@@ -32,7 +32,6 @@ This project was generated using **Angular CLI version 15.0.1**.
 ## ⚙️ Development Server
 
 Run the following command to start a development server:
-
 ```
 ng serve
 ```
@@ -44,22 +43,30 @@ The application will automatically reload when you change any source file.
 ## 🛠️ Code Scaffolding
 
 To generate a new component, run:
+```
 ng generate component component-name
+```
 
 You can also generate directives, pipes, services, classes, guards, interfaces, enums, or modules:
+```
 ng generate directive|pipe|service|class|guard|interface|enum|module
+```
 
 ## 📦 Build
 
 To build the project, run:
+```
 ng build
+```
 
 The build artifacts will be stored in the dist/ directory.
 
 ## ✅ Running Unit Tests
 
 Run unit tests using:
+```
 ng test
+```
 
 This will execute the tests via Karma.
 
