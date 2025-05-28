@@ -20,7 +20,7 @@ A secure and efficient file upload platform built for educational institutions, 
 
 ### 🖥️ Angular Client
 - Built with Angular CLI 15+
-- Responsive and user-friendly UI
+- Responsive and user-friendly UI using PrimeNG
 - Upload interface with validations and feedback
 
 ### 🧩 Web API Backend
@@ -42,10 +42,10 @@ A secure and efficient file upload platform built for educational institutions, 
 
 ## 🛠️ Tech Stack
 
-- Frontend: Angular 15, TypeScript, HTML5, SCSS
+- Frontend: Angular 15, TypeScript, PrimeNG, HTML5, CSS
 - Backend: ASP.NET Web API (.NET Core)
 - Cloud: Microsoft Azure (Blob Storage)
-- Dev Tools: Visual Studio Code, Postman
+- Dev Tools: Visual Studio Code, Swagger
 
 ---
 
@@ -56,7 +56,6 @@ A secure and efficient file upload platform built for educational institutions, 
 - Angular CLI (npm install -g @angular/cli)
 - .NET SDK (v6.0+)
 - Azure Storage account
-- Node.js (v16+)
 
 ### Clone the Repository
  ```
