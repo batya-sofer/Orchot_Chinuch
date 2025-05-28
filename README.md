@@ -104,18 +104,6 @@ dotnet run
   ng e2e
    ```
 
----
-
-## 📂 Project Structure
-
-OrchotChinuchProject/  
-├── client/         # Angular frontend  
-├── server/         # ASP.NET Web API backend 
-├── service/         # Windows Service
-├── README.md
-
----
-
 ## 🔒 Security
 
 - Authentication via Azure AD (planned)  
