@@ -1,4 +1,4 @@
-```
+
 # Orchot Chinuch Project
 
 A secure and efficient file upload platform built for educational institutions, enabling seamless integration with Azure cloud storage.
@@ -134,4 +134,4 @@ Built with ❤️ for the Orchot Chinuch organization.
 ## 📘 License
 
 This project is proprietary and licensed for internal organizational use only.
-```
+
