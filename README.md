@@ -1,82 +1,137 @@
+```
 # Orchot Chinuch Project
 
-This project was generated using **Angular CLI version 15.0.1**.
-
-This Project is an Azure File Uploader — a software solution developed for a national chain organization. It enables seamless file uploads to Azure cloud storage. The client side is implemented using Angular, and the server side is built with Web API, following a layered architectural approach.
+A secure and efficient file upload platform built for educational institutions, enabling seamless integration with Azure cloud storage.
 
 ---
 
-## 🚀 Features
+## 🧭 Overview
 
-- **File Uploading**  
-  Upload files directly to Azure cloud storage, ensuring efficient and centralized file management with enhanced security.
-
-- **Angular Client-Side**  
-  A responsive and intuitive UI built with Angular. Users can easily navigate the app, select files for upload, and track the progress in real-time.
-
-- **Web API Server-Side**  
-  Robust and scalable backend infrastructure built with Web API to handle file transfers and manage Azure storage operations.
-
-- **Layered Architecture**  
-  Follows a clean architectural pattern with distinct layers:  
-  - **Presentation**  
-  - **Business Logic**  
-  - **Data Access**  
-  This ensures maintainability, modularity, and high code reusability.
-
-- **Azure Integration**  
-  Seamless connection to Azure cloud storage leveraging its secure and reliable features.
+**Orchot Chinuch** is a full-stack web application designed for a national educational network. It enables administrators and authorized users to upload and manage files directly to Azure cloud storage. The platform is built with a modular and scalable architecture, combining Angular on the frontend and ASP.NET Web API on the backend.
 
 ---
 
-## ⚙️ Development Server
+## ✨ Key Features
 
-Run the following command to start a development server:
-```
+### 📤 File Upload System
+- Upload multiple files to Azure Blob Storage securely
+- Real-time upload progress tracking
+- Organized and centralized file management
+
+### 🖥️ Angular Client
+- Built with Angular CLI 15+
+- Responsive and user-friendly UI
+- Upload interface with validations and feedback
+
+### 🧩 Web API Backend
+- Developed in ASP.NET Web API
+- Layered architecture: Presentation, Business Logic, and Data Access layers
+- Secure integration with Azure SDK for file operations
+
+### 🏗️ Layered Architecture
+- Clean separation of concerns
+- High maintainability and modularity
+- Scalable and testable components
+
+### ☁️ Azure Integration
+- Secure connection to Azure Blob Storage
+- Utilizes SAS tokens or service credentials
+- Optimized for performance and scalability
+
+---
+
+## 🛠️ Tech Stack
+
+- Frontend: Angular 15, TypeScript, HTML5, SCSS
+- Backend: ASP.NET Web API (.NET Core)
+- Cloud: Microsoft Azure (Blob Storage)
+- Dev Tools: Visual Studio Code, Postman
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Angular CLI (npm install -g @angular/cli)
+- .NET SDK (v6.0+)
+- Azure Storage account
+- Node.js (v16+)
+
+### Clone the Repository
+ ```
+git clone https://github.com/YOUR_USERNAME/OrchotChinuchProject.git  
+cd OrchotChinuchProject
+ ```
+---
+
+### Run the Angular Client
+ ```
+cd client  
+npm install  
 ng serve
+ ```
+Visit: http://localhost:4200
+
+---
+
+### Run the Web API Server
+ ```
+cd server  
+dotnet build  
+dotnet run
+ ```
+---
+
+## ✅ Development Notes
+
+- Code generation:
+``` 
+  ng generate component component-name
+  ```
+
+- Build project:
 ```
-Navigate to http://localhost:4200/.
+  ng build
+  ```
 
-The application will automatically reload when you change any source file.
+- Run unit tests:
+ ```
+  ng test
+   ```
 
+- Run e2e tests:
+ ```
+  ng e2e
+   ```
 
-## 🛠️ Code Scaffolding
+---
 
-To generate a new component, run:
+## 📂 Project Structure
+
+OrchotChinuchProject/  
+├── client/         # Angular frontend  
+├── server/         # ASP.NET Web API backend  
+├── README.md  
+└── azure.config    # Azure credentials/config (ignored)
+
+---
+
+## 🔒 Security
+
+- Authentication via Azure AD (planned)  
+- Upload operations protected by access tokens  
+- CORS configured for controlled access
+
+---
+
+## 🧠 Credits
+
+Built with ❤️ for the Orchot Chinuch organization.
+
+---
+
+## 📘 License
+
+This project is proprietary and licensed for internal organizational use only.
 ```
-ng generate component component-name
-```
-
-You can also generate directives, pipes, services, classes, guards, interfaces, enums, or modules:
-```
-ng generate directive|pipe|service|class|guard|interface|enum|module
-```
-
-## 📦 Build
-
-To build the project, run:
-```
-ng build
-```
-
-The build artifacts will be stored in the dist/ directory.
-
-## ✅ Running Unit Tests
-
-Run unit tests using:
-```
-ng test
-```
-
-This will execute the tests via Karma.
-
-## 📊 Languages
-
-C# – 49.4%
-
-TypeScript – 30.9%
-
-HTML – 18.6%
-
-CSS – 1.1%
-
