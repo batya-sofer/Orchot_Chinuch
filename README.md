@@ -110,9 +110,9 @@ dotnet run
 
 OrchotChinuchProject/  
 ├── client/         # Angular frontend  
-├── server/         # ASP.NET Web API backend  
-├── README.md  
-└── azure.config    # Azure credentials/config (ignored)
+├── server/         # ASP.NET Web API backend 
+├── service/         # Windows Service
+├── README.md
 
 ---
 
