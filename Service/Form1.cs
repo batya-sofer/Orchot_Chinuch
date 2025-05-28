@@ -83,15 +83,14 @@ namespace service
                             List<string> allMails = document.MailAddress.Split(',').ToList();
                             foreach (string mail in allMails)
                             {
-                                string subject = "תפוגת מסמך: " + document.DocumentName;
+                                string subject = "Messeage about document: " + document.DocumentName;
                                 string body = "<p style=\"font-family: 'Tahoma'; font-size: 12px;\">"
-                                                 + "ארגון:  " + d.Organization + "<br />"
-                                                 + "מחלקה:  " + d.Department + "<br />"
-                                                 + "מחלקה עסקית:  " + d.BusinessUnit + "<br />"
-                                                 + "תאריך יצירת המסמך: " + document.CreateDate?.ToString("d") + "<br />"
-                                                 + "תאריך סיום תוקף:  " + document.ExpirationDate?.ToString("d") + "<br /><br />"
-                                                 + "<strong>נא לעדכן את תוקף המסמך</strong><br />"
-                                                 + "קישור למסמך:  <a href=\"" + document.DocLink + "\">" + document.DocLink + "</a>"
+                                                 + "Organization:  " + d.Organization + "<br />"
+                                                 + "Department:  " + d.Department + "<br />"
+                                                 + "Business unit:  " + d.BusinessUnit + "<br />"
+                                                 + "Document Created date: " + document.CreateDate?.ToString("d") + "<br />"
+                                                 + "Document Expiration date:  " + document.ExpirationDate?.ToString("d") + "<br /><br />"
+                                                 + "Link to document:  <a href=\"" + document.DocLink + "\">" + document.DocLink + "</a>"
                                                  + "</p>";
                                 SendEmail(mail, d.CreateBy, body, subject);
                             }
@@ -109,12 +108,11 @@ namespace service
             {
                 string mail;
                 string pass;
-                //הבאת ערך המייל והסיסמא מה app config
+
                 mail = ConfigurationManager.AppSettings.Get("mail");
                 pass = ConfigurationManager.AppSettings.Get("password");
 
-                // ניתן להגדיר שם שיוצג על כתובות המייל של השולח והמקבל
-                var senderEmail = new MailAddress(mail, "התראות ארכיון מסמכים");
+                var senderEmail = new MailAddress(mail, "Orchot Service");
                 var receiverEmail = new MailAddress(receiver, name);
                 var password = pass;
                 string sub = subject;
@@ -126,11 +124,6 @@ namespace service
                     EnableSsl = true,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
                     UseDefaultCredentials = true
-
-                    // מגדירים במייל אימות דו שלבי, בתוכו ישנה אופציה להגדרת סיסמאות לאפליקציות
-                    // ומעתיקים את הקוד בן 16 האותיות במקום הכוכביות windows בוחרים סיסמה לאימייל במחשב 
-                    //UseDefaultCredentials = false,
-                    //Credentials = new NetworkCredential(mail, "*******")
                 };
 
                 using (MailMessage mess = new MailMessage(senderEmail, receiverEmail)
